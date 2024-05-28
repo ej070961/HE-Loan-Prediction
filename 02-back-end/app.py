@@ -41,7 +41,7 @@ ctxt_next.load(model_file_path)
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.json
-    # print(data)
+    print(data)
 
     ciphertext = data['ciphertext']
     iv = data['iv']

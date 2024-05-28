@@ -35,7 +35,7 @@ function App() {
               checked={selectedMenu === "Borrower Details"}
               onChange={handleMenuChange}
             />
-            <label>Borrower Details</label>
+            <label>Predict</label>
           </div>
         </div>
       </A.Navigation>
