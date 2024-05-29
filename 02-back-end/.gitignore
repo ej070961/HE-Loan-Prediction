@@ -3,6 +3,7 @@ __pycache__/
 
 # models
 models/
+logistic_HE.bin
 
 # keys
 keys/

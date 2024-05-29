@@ -8,6 +8,7 @@ from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 import base64
 import json
+from piheaan.math import approx
 
 app = Flask(__name__)
 CORS(app)
@@ -15,7 +16,7 @@ CORS(app)
 load_dotenv()
 current_dir = os.path.dirname(os.path.abspath(__file__))
 key_file_path = os.path.join(current_dir, "keys") # key for pi-heaan
-model_file_path = os.path.join(current_dir, "models/logistic_HE.bin") # ML model for prediction
+model_file_path = os.path.join(current_dir, "logistic_HE.bin") # ML model for prediction
 
 # Load the context and keys
 params = heaan.ParameterPreset.FGb
